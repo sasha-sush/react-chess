@@ -1,5 +1,3 @@
-import './style.css';
-
 import React from "react";
 
 import Header from './components/Header';
@@ -8,11 +6,9 @@ import Chess from './components/Chess';
 import Login from './components/Login';
 import Timer from './components/Timer';
 
-//import Test from './TestComp.js';
-
 function App() {
   return (
-    <div>
+    <>
       <Header/>
       <Timer/>
       <div id="content-div">
@@ -20,7 +16,7 @@ function App() {
         <Chess/>
       </div>
       <Footer/>
-    </div>
+    </>
   );
 }
 
