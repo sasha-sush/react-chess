@@ -3,12 +3,15 @@
     border: 1px solid red;
 }*/
 
-
 body {
+    --my-dark-blue: #88B2CC;
+    --my-light-blue: #E7F2F8;
+    --my-white: #FFFFFF;
+
     margin: 0;
     font-family: 'Roboto', cyrillic;
     font-weight: 500;
-    background-color: #E7F2F8;
+    background-color: var(--my-light-blue);
 }
 
 #root>div{
@@ -17,7 +20,7 @@ body {
 }
 
 a{
-    color: #88B2CC;
+    color: var(--my-dark-blue);
 }
 a:hover{
     color: #FFA384;
@@ -27,8 +30,8 @@ header{
     margin: 0px;
     padding: 10px 2%;
     width: 96%;
-    background-color: #88B2CC;
-    color: white;
+    background-color: var(--my-dark-blue);
+    color: var(--my-white);
     border-radius: 0 0 .2em .2em;
 
     display: flex;    
@@ -55,7 +58,7 @@ header>#div-avatar>#avatar-pic{
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    border: #fff solid 0.1em;
+    border: var(--my-white) solid 0.1em;
 }
 #content-div{
     display: flex;
@@ -65,7 +68,7 @@ header>#div-avatar>#avatar-pic{
 }
 footer{
     padding: 15px 0;
-    background-color: #fff;
+    background-color: var(--my-white);
     border-radius: .3em .3em 0 ;
 
     display: flex;
@@ -76,10 +79,10 @@ footer{
 
 
 div#login-div{
-    color: white;
+    color: var(--my-white);
     padding: 15px;
     border-radius: .3em;
-    background-color: #88B2CC;
+    background-color: var(--my-dark-blue);
 }
 #login-div form > div {
     margin-top: 10px;
@@ -95,7 +98,7 @@ div#login-div{
 #login-div input[type="text"], input[type="password"]{
     font-family: inherit;
     font-size: inherit;
-    background-color: #FFFFFF;
+    background-color: var(--my-white);
     border: 0;
     border-radius: .3em;
     height: 1.5em;
@@ -104,7 +107,7 @@ div#login-div{
 }
 #login-div select{
     font-family: inherit;
-    background-color: #FFFFFF;
+    background-color: var(--my-white);
     border: 0;
     border-radius: .3em;
     color:#000;
@@ -112,7 +115,7 @@ div#login-div{
     height: 1.5em;
 }
 #login-div textarea{
-    background-color: #FFFFFF;
+    background-color: var(--my-white);
     border: 0;   
     border-radius: .3em;
     color:#000;
@@ -128,20 +131,20 @@ div#login-div{
 #login-div input[type=submit]{
     font-family: inherit;
     font-size: inherit;
-    background-color: #FFF;
-    color: #88B2CC;
-    border: solid white 2px;
+    background-color: var(--my-white);
+    color: var(--my-dark-blue);
+    border: solid var(--my-white) 2px;
     height: 2em;
     border-radius: .3em;
 
     transition: 0.1s ease-in-out;
 }
 #login-div input[type=submit]:hover{
-    background-color: #88B2CC;
-    color: white;
+    background-color: var(--my-dark-blue);
+    color: var(--my-white);
 }
 #login-div input[type=submit]:active{
-    background-color: white;
+    background-color: var(--my-white);
 }
 #login-div .center{
     text-align: center;
@@ -190,10 +193,10 @@ div#login-div{
 }
 
 #chess-table .white { 
-    background: #ffffff;
+    background: var(--my-white);
 }
 #chess-table .black { 
-    background: #88B2CC;
+    background: var(--my-dark-blue);
 }
 
 #chess-table .white:hover, 
@@ -206,10 +209,10 @@ div#login-div{
 }
 /*
 .wht .overlay-letter{ 
-    color: #88B2CC;
+    color: var(--my-dark-blue);
 }
 .blck .overlay-letter{ 
-    color: #ffffff;
+    color: var(--my-white);
 }
 
 .overlay-letter{
@@ -226,8 +229,8 @@ div#login-div{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #88B2CC;
-    color: #fff;
+    background-color: var(--my-dark-blue);
+    color: var(--my-white);
     border-radius: .3em;
     padding: .5em .3em;
 }
@@ -260,9 +263,9 @@ div#login-div{
 }
 
 #timer-div button{
-    background-color: #fff;
-    color:#88B2CC;
-    border: solid white 2px;
+    background-color: var(--my-white);
+    color:var(--my-dark-blue);
+    border: solid var(--my-white) 2px;
     border-radius: .3em;
     width: 4.5em;
     padding: 3px 4px;
@@ -277,24 +280,24 @@ div#login-div{
 }
 
 #timer-div button:hover{
-    background-color: #88B2CC;
-    color: white !important;
+    background-color: var(--my-dark-blue);
+    color: var(--my-white) !important;
 }
 
 #timer-div button:active{
-    background-color: white;
+    background-color: var(--my-white);
 }
 
 #timer-div button:disabled{
-    background-color: #E7F2F8;
-    border-color: #E7F2F8;
+    background-color: var(--my-light-blue);
+    border-color: var(--my-light-blue);
     color:#a1bfd1 !important;
 }
 
 #chart-div{
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--my-white);
     border-radius: .3em;
     margin-left: 15%;
     margin-right: 15%;
