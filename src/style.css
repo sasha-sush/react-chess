@@ -1,0 +1,284 @@
+
+/**{
+    border: 1px solid red;
+}*/
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', cyrillic;
+    font-weight: 500;
+    background-color: #E7F2F8;
+}
+
+#root>div>div{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+a{
+    color: #88B2CC;
+}
+a:hover{
+    color: #FFA384;
+}
+
+header{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+    background-color: #88B2CC;
+    color: white;
+    border-radius: 0 0 .2em .2em;
+
+    font-size: 32px;
+
+    display: flex;    
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#content-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: .3em .3em 0 ;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+div#login-div{
+    color: white;
+    padding: 15px;
+    border-radius: .3em;
+    background-color: #88B2CC;
+}
+#login-div form > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#login-div form > div:first-child {
+    margin-top: 0;
+}
+#login-div form > div:last-child {
+    margin-bottom: 0;
+}
+
+#login-div input[type="text"], input[type="password"]{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .3em;
+    height: 1.5em;
+    padding: .1em;
+    width:100%-.2em;
+}
+#login-div select{
+    font-family: inherit;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .3em;
+    color:#000;
+    font-family: inherit;
+    height: 1.5em;
+}
+#login-div textarea{
+    background-color: #FFFFFF;
+    border: 0;   
+    border-radius: .3em;
+    color:#000;
+    font-family: inherit;
+    padding: 1px;
+    width: 100%;
+    height: 8em;
+    resize:vertical;
+}
+#login-div input[type=radio]{
+    margin: 0;
+}
+#login-div input[type=submit]{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #FFF;
+    color: #88B2CC;
+    border: solid white 2px;
+    height: 2em;
+    border-radius: .3em;
+
+    transition: 0.1s ease-in-out;
+}
+#login-div input[type=submit]:hover{
+    background-color: #88B2CC;
+    color: white;
+}
+#login-div input[type=submit]:active{
+    background-color: white;
+}
+#login-div .center{
+    text-align: center;
+}
+#login-div .passWeak{
+    color: #FFA384;
+}
+#login-div .passMedium{
+    color: #f0e087;
+}
+#login-div .passStrong{
+    color: #9ff087;
+}
+
+#chess-table { 
+    border-spacing: 0; border-collapse: collapse; 
+}
+#chess-table td { 
+    padding: 0px;
+    margin: 0;
+    width: 4em; 
+    height: 4em; 
+    min-width: 4em;
+    min-height: 4em;
+
+    text-align: center;
+    vertical-align: middle;
+    
+    transition: 0.05s ease-in-out;
+}
+#chess-table tr:first-child>td:first-child{
+    border-radius: .3em 0 0 0 ;
+}
+#chess-table tr:first-child>td:last-child{
+    border-radius: 0 .3em 0 0 ;
+}
+#chess-table tr:last-child>td:first-child{
+    border-radius: 0 0 0 .3em;
+}
+#chess-table tr:last-child>td:last-child{
+    border-radius: 0 0 .3em 0;
+}
+#chess-table img { 
+    width: 90%; 
+    height: 90%;
+}
+
+#chess-table .white { 
+    background: #ffffff;
+}
+#chess-table .black { 
+    background: #88B2CC;
+}
+
+#chess-table .white:hover, 
+#chess-table .black:hover {
+    background-color: #C4D9E6;
+}
+#chess-table .white:active, 
+#chess-table .black:active {
+    opacity: 0.1;
+}
+/*
+.wht .overlay-letter{ 
+    color: #88B2CC;
+}
+.blck .overlay-letter{ 
+    color: #ffffff;
+}
+
+.overlay-letter{
+    position:absolute;
+    margin: 1px;
+}
+*/
+#timer-div{
+    display: flex;
+    justify-content: center;
+}
+
+#timer-div>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #88B2CC;
+    color: #fff;
+    border-radius: .3em;
+    padding: .5em .3em;
+}
+
+#timer-numbers-div{
+    font-size: 2.5em;
+    font-family: 'Digital 7';
+    border: black solid 2px;
+    border-radius: .15em;
+    margin: 0 0 .2em;
+    padding: 0 .1em;
+    color: black;
+    background: #A7AAA0;
+    width: 2.31em;
+    height: 1em;
+}
+
+#timer-numbers-div span{
+    
+    transition: 0.1s ease-in-out;
+}
+
+#timer-span-background{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.15);
+}
+
+#timer-buttons-div{
+    display: flex;
+}
+
+#timer-div button{
+    background-color: #fff;
+    color:#88B2CC;
+    border: solid white 2px;
+    border-radius: .3em;
+    width: 4.5em;
+    padding: 3px 4px;
+    margin: 0 .1em;
+    font-size: inherit;
+    
+    transition: 0.1s ease-in-out;
+}
+
+#timer-div #timer-button-stop{
+    color: #FFA384;
+}
+
+#timer-div button:hover{
+    background-color: #88B2CC;
+    color: white !important;
+}
+
+#timer-div button:active{
+    background-color: white;
+}
+
+#timer-div button:disabled{
+    background-color: #E7F2F8;
+    border-color: #E7F2F8;
+    color:#a1bfd1 !important;
+}
+
+#chart-div{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: .3em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
