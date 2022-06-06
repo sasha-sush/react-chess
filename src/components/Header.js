@@ -34,7 +34,7 @@ class Header extends React.Component{
             </div>
             <div id="div-avatar">
                 <span>Doggie</span>
-                <img id="avatar-pic" src={this.doggieUrl} alt="Dog"></img>
+                <img id="avatar-pic" src={this.doggieUrl} onClick={() => {this.reloadDoggieUrl(); this.forceUpdate()}} alt="Dog"></img>
             </div>
         </header>
         );
