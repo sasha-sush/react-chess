@@ -2,8 +2,7 @@ import React from "react";
 
 class Header extends React.Component{
     doggieUrl = "";
-    
-    
+        
     constructor(props){
         super(props);
         this.reloadDoggieUrl();
@@ -18,11 +17,11 @@ class Header extends React.Component{
             xhttp.open("GET", 'https://random.dog/woof', false);
             xhttp.send();
             isPic = xhttp.responseText.match('\\.jpg');
-            //isPic |= xhttp.responseText.match('\\.png');
+            isPic ||= xhttp.responseText.match('\\.jpeg');
+            isPic ||= xhttp.responseText.match('\\.png');
         }
 
         this.doggieUrl = 'https://random.dog/' + xhttp.responseText;
-        //this.setState({doggieUrl : 'https://random.dog/' + xhttp.responseText});
     }
 
     render(){

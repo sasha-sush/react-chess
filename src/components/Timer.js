@@ -42,8 +42,6 @@ class Timer extends React.Component{
 
 		document.getElementById('timer-button-stop').hidden = false;
 		document.getElementById('timer-button-start').hidden = true;
-		
-		//document.getElementById('timer-button-pause').disabled = false;
 	}
 	
 	timerPause(){
@@ -66,8 +64,6 @@ class Timer extends React.Component{
 	
 		document.getElementById('timer-button-pause').hidden = false;
 		document.getElementById('timer-button-resume').hidden = true;
-	
-		//document.getElementById('timer-button-pause').disabled = true;
 	
 		document.getElementById('timer-button-stop').hidden = true;
 		document.getElementById('timer-button-start').hidden = false;

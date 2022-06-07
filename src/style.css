@@ -58,7 +58,7 @@ header>#div-avatar>#avatar-pic{
     width: 4em;
     height: 4em;
     border-radius: 100%;
-    border: var(--my-white) solid 0.1em;
+    border: var(--my-white) solid .15em;
 }
 #content-div{
     display: flex;
